@@ -110,7 +110,7 @@
                                        LogoScale="0.72" Logo="F1 M0,0 h15 v2 h-15 v-2 Z" />
                     <Grid x:Name="PanTitleMain" HorizontalAlignment="Left" Width="{Binding ActualWidth, ElementName=PanTitle, Mode=OneWay}">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="8*" />
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="1*" />
                         </Grid.ColumnDefinitions>
