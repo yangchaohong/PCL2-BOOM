@@ -383,6 +383,9 @@ Refresh:
     Private Sub LabLauncherTheme9Copy_MouseRightButtonUp() Handles LabLauncherTheme9Copy.MouseRightButtonUp, RadioLauncherTheme9.MouseRightButtonUp
         PageOtherLeft.TryFeedback()
     End Sub
+    Private Sub BtnThemeUnlockAll_Click(sender As Object, e As MouseButtonEventArgs) Handles BtnThemeUnlockAll.Click
+        ThemeUnlockAll()
+    End Sub
 
     '主题自定义
     Private Sub RadioLauncherTheme14_Change(sender As Object, e As RouteEventArgs) Handles RadioLauncherTheme14.Changed

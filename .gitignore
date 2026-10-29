@@ -342,3 +342,13 @@ ASALocalRun/
 healthchecksdb
 
 MaskFiles/
+
+# Local service credentials
+# auth_token.ini is a tracked template. Keep real credentials in this ignored file.
+**/auth_token.local.ini
+.env
+.env.*
+!.env.example
+*.snk
+*.key
+*.pem

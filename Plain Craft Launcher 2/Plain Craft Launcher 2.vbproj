@@ -557,6 +557,8 @@
       <SubType>Designer</SubType>
     </Page>
     <None Include="app.manifest" />
+    <EmbeddedResource Include="Resources\auth_token.ini" />
+    <EmbeddedResource Include="Resources\auth_token.local.ini" Condition="Exists('Resources\auth_token.local.ini')" />
     <None Include="Resources\Custom.xaml">
       <SubType>Designer</SubType>
     </None>
