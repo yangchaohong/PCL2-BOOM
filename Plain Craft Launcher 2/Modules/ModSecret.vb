@@ -230,6 +230,10 @@ Friend Module ModSecret
     End Sub
     Friend Sub ThemeCheckAll(EffectSetup As Boolean)
         If FrmSetupUI Is Nothing Then Return
+        If Not RunInUi() Then
+            RunInUi(Sub() ThemeCheckAll(EffectSetup))
+            Return
+        End If
         Dim HiddenThemeIds As Integer() = {5, 6, 7, 8, 9, 10, 11, 12, 13}
         For Each ThemeId In HiddenThemeIds
             Dim Radio = TryCast(FrmSetupUI.FindName($"RadioLauncherTheme{ThemeId}"), MyRadioBox)
